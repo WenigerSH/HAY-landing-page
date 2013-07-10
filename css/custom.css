@@ -1,0 +1,38 @@
+body {
+	background-image: url('../img/background.png');
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 2630px;
+	padding-top: 11px;
+	font-family: 'Montserrat', sans-serif;
+	color: #334060;
+	font-size: 15px;
+}
+.container {
+
+}
+div#graph {
+	margin-top: 35px;
+}
+div#graph-description {
+	margin-top: 35px;
+}
+div#header-and-icon {
+	padding-top: 83px;
+}
+h1,h2,h3 {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 21px;
+}
+div#first-slide-right {
+	padding-top: 119px;
+}
