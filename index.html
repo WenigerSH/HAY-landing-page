@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+<head>
+    <title>HAY Landing Page</title>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/flexslider.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet" media="screen">
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <!-- header -->
-      <div class="row" id="header">
-        <div class="span6">
-          <img src="img/logo.png">
-        </div>
-        <div class="span6">
-          <img src="img/appstore.png" class="pull-right">
-        </div>
-      </div>
-      <!-- end: header -->
-      <!-- first slide -->
-      <div class="row" id="1st-slide">
-        <div class="span6">
-          <div class="row" id="header-and-icon">
+        <header class="row">
             <div class="span6">
-              <h1>Lift up your mood</h1>
-              <h2>by beatifull tracking system</h2>
+                <img src="img/logo.png" alt="HAY logo" class="logo-top" />
             </div>
-          </div>
-          <div class="row" id="graph">
             <div class="span6">
-              <img src="img/graph.png">
+                <img src="img/appstore-top.png" class="pull-right" alt="AppStore" />
+            </div>    
+        </header><!-- header -->
+        <div class="row" id="info">
+            <div class="info-wrapper">
+                <img src="img/icon.png" alt="HAY icon" class="hay-icon" />
+                <h2>Lift up your mood</h2>
+                <h3>by simple tracking system</h3>
+                <img src="img/chart.png" alt="mood chart" class="mood-chart" />
+                <p><span>Positive Affect Negative Affect Scale</span> aanean mattis quam sit amet lacinia vestibulum. Read tmore about <a href="#">Hawthorne effect</a></p>
             </div>
-          </div>          
-          <div class="row" id="graph-description">
-            <div class="span6">
-              <p>
-                <strong>Research shows</strong> that tracking your mood for 3 months makes <strong>you feel better</strong>.<br>
-                Feeling bit down or depressed? Give it a try!
-              </p>
-              <p>
-                Read more about Hawthorne effect 
-              </p>
+            
+            <img src="img/app.png" alt="app" class="app-view" />
+        </div><!-- info -->
+    </div><!-- container -->
+    <div id="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="slide slide-1">
+                        <img src="img/slide-1.png" alt="slide-1" class="slide-1-photo pull-left"/>
+                        <h2>Measure your mood every day</h2>
+                        <p><span>Basic on four step scale</span> ultrices mauris dolor id eros. Phasellus eget ipsum nec turpis ultrices molestie.</p> 
+                        <p>Etiam elementum, enim non <span>condimentum ultricies</span>, mi nulla interdum neque, in sagittis nunc magna eu nibh. Nunc eu hendrerit nibh. Integer nec cursus mi. </p>
+                        <img src="img/slide-1-lights.png" alt="slide-1-lights" class="slide-1-lights" />
+                    </div>
+                </li>
+                <li>
+                    <div class="slide slide-2">
+                        <img src="img/slide-2.png" alt="slide-2" class="slide-2-photo pull-left"/>
+                        <h2>Track your scores</h2>
+                        <p>Track your daily scores to learn what could be causing your ups and downs</p>
+                        <p>Etiam elementum, enim non <span>condimentum ultricies</span>, mi nulla interdum neque, in sagittis nunc magna eu nibh. Nunc eu hendrerit nibh.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide slide-3">
+                        <h2>Lift your mood</h2>
+                        <p>this measure method cant lift mood over time <br /> you can also add a note to each score</p>
+                        <img src="img/slide-3.png" alt="slide-3" class="slide-3-photo" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><!-- slider -->
+    <div class="container">
+
+        <footer>
+            <img src="img/logo-white.png" alt="HAY logo" class="hay-logo-white" />
+            <div class="row">
+                <section id="social" class="span3">
+                    <p>Follow us</p>
+                    <div class="social-bg">
+                        <a href="#"><img src="img/fb.png" alt="facebook" /></a>
+                        <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+                    </div>
+                </section>
+
+                <section id="form" class="span6">
+                    <p>Let us remind you when it's ready</p>
+                    <form method="POST" action="addLead.php" id="addLeadForm">
+                        <input type="text" name="email" class="input-email" placeholder="enter your email" />
+                        <input type="submit" value="Send" class="submit" />
+                    </form>
+                </section>
+
+                <section id="appstore" class="span3">
+                    <p>It will be free - forever</p>
+                    <img src="img/appstore-bottom.png" alt="AppStore" class="appstore-bottom" />
+                </section>
             </div>
-          </div>
-        </div>
-        <div class="span6" id="first-slide-right">
-          <img src="img/1-slide-right.jpg" class="pull-right">
-        </div>
-      </div>
-      <!-- end first slide>
-    </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>  
+            <div class="row" id="credits">
+                <div class="footer-line"></div>
+                <p><img src="img/hay-logo-small.png" alt="HAY" /> is made by <a href="#"><img src="img/weniger.png" alt="Weniger" /></a> company behind <img src="img/30days.png" alt="30 days" /> 30daysHQ.com</p>
+            </div>
+        </footer>
+    </div> 
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>  
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
 </html>
