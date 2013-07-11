@@ -38,11 +38,15 @@
           <div class="row" id="graph-description">
             <div class="span6">
               <p>
-                <strong>Research shows</strong> that tracking your mood for 3 months makes <strong>you feel better</strong>.<br>
+                <strong>Research shows</strong> that tracking your mood for 3 months makes <strong>you feel better</strong>.
+                <br>
                 Feeling bit down or depressed? Give it a try!
               </p>
               <p>
                 Read more about Hawthorne effect 
+                <form method="POST" action="addLead.php" id="addLeadForm">
+                  <input type="text" name="email">
+                </form>
               </p>
             </div>
           </div>
@@ -51,9 +55,10 @@
           <img src="img/1-slide-right.jpg" class="pull-right">
         </div>
       </div>
-      <!-- end first slide>
+      <!-- end first slide -->
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </body>  
 </html>
