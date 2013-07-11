@@ -6,6 +6,8 @@ $(document).ready(function() {
 			if(data == 'OK') {
 				alert('Your e-mail has been saved. Thank you.');
 				$("form#addLeadForm input").val("");
+			} else {
+				alert('There was an error');
 			}
 		})
 	});
