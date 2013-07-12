@@ -24,7 +24,7 @@
                 <h2>Lift up your mood</h2>
                 <h3>by simple tracking system</h3>
                 <img src="img/chart.png" alt="mood chart" class="mood-chart" />
-                <p><span>Positive Affect Negative Affect Scale</span> aanean mattis quam sit amet lacinia vestibulum. Read tmore about <a href="#">Hawthorne effect</a></p>
+                <p style="margin-left: 2px;"><span>Researches had proven</span> that by simply tracking something we are getting better at it. It applies to weight loos, money saveing, building you muscles and your mood as well.</p>
             </div>
             <img src="img/app.png" alt="app" class="app-view" />
         </div><!-- info -->
@@ -35,16 +35,21 @@
                 <li>
                     <div class="slide slide-1">
                         <img src="img/slide-1.png" alt="slide-1" class="slide-1-photo pull-left"/>
-                        <h2>Measure your mood every day</h2>
-                        <p><span>Basic on four step scale</span> ultrices mauris dolor id eros. Phasellus eget ipsum nec turpis ultrices molestie.</p> 
-                        <p>Etiam elementum, enim non <span>condimentum ultricies</span>, mi nulla interdum neque, in sagittis nunc magna eu nibh. Nunc eu hendrerit nibh. Integer nec cursus mi. </p>
+                        <h2>Step 1. Measure your mood</h2>
+                        <p>Determine your mood using proven <span><a href="http://en.wikipedia.org/wiki/Affect_measures">PANAS affect measurment</a></span> in less than 2 minutes.</p> 
+                        <p>
+                            We ask you how strong do you feel seperate emotions and calculate you mood based on that. 
+                        </p>
+                        <p>
+                            E.g. how <strong>interested (wanting to be involved in something)</strong> you feel right now?
+                        </p>
                         <img src="img/slide-1-lights.png" alt="slide-1-lights" class="slide-1-lights" />
                     </div>
                 </li>
                 <li>
                     <div class="slide slide-2">
                         <img src="img/slide-2.png" alt="slide-2" class="slide-2-photo pull-left"/>
-                        <h2>Track your scores</h2>
+                        <h2>Step 2. Track your scores</h2>
                         <p>Track your daily scores to learn what could be causing your ups and downs</p>
                         <p>Etiam elementum, enim non <span>condimentum ultricies</span>, mi nulla interdum neque, in sagittis nunc magna eu nibh. Nunc eu hendrerit nibh.</p>
                     </div>
@@ -75,7 +80,7 @@
                 <section id="form" class="span6">
                     <p>Let us remind you when it's ready</p>
                     <form method="POST" action="addLead.php" id="addLeadForm">
-                        <input type="text" name="email" class="input-email" placeholder="enter your email" />
+                        <input type="text" name="email" required="required" class="input-email" placeholder="enter your email" />
                         <input type="submit" value="Send" class="submit" />
                     </form>
                 </section>
@@ -93,7 +98,13 @@
     </div> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/main.js"></script>   
+    <script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+    <script type="text/javascript" src="js/noty/layouts/top.js"></script>
+
+    <script type="text/javascript" src="js/noty/layouts/topRight.js"></script>
+    <script type="text/javascript" src="js/noty/themes/default.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>   
     <script type="text/javascript" src="js/custom.js"></script>    
 </body>  
 </html>
