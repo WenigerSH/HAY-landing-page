@@ -173,7 +173,7 @@ footer {
 	}
 
 		footer #appstore .appstore-bottom {
-			margin-top: -4px;
+			margin-top: -10px;
 		}
 
 		footer section img {
@@ -227,11 +227,14 @@ footer {
 			    color: #475985;
 			}
 
-			footer section form .input-email:focus {
+			footer section form .input-email:focus,
+			footer section form .input-email:focus:invalid:focus {
 				outline: none;
 				-webkit-box-shadow: none;
 			       -moz-box-shadow: none;
 				        box-shadow: none;
+				border-color: none;
+				color: #475985;
 			}
 
 			footer section form .submit {
