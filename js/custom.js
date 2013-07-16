@@ -13,6 +13,8 @@ $(document).ready(function() {
 		if(validateEmail(email)) {
 			$.post($(this).attr("action"), $(this).serialize(), function(data) {
 				if(data == 'OK') {
+					//send google event to analitycs
+					ga('send', 'event', 'lead', 'submit');
 					var n = noty({"text": 'Your e-mail has been saved. Thank you! We will inform you when we release How Are You.', type: 'success'});
 					$("form#addLeadForm input[name=email]").val("");
 				} else {
