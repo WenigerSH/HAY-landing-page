@@ -1,5 +1,6 @@
 asdasasdsa
 asdsada
+<<<<<<< HEAD
 bartosz.rychlicki@wenigersh.com
 bartosz.rychlicki@wenigersh.com
 666@wenigersh.com
@@ -28,3 +29,11 @@ Kuba.bazela@gmail.com
 patrycjabr@gmail.com
 ania.czoska@gmail.com
 gosimek@gmail.com
+=======
+dsadsad@wp.pl
+eeloee
+wwww@wp.pl
+dddd@wp.pl
+dasdsa@wp.pl
+asdas@wp.pl
+wpw@wp.pl

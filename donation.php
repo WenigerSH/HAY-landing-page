@@ -7,13 +7,15 @@
     <link href="css/custom.css" rel="stylesheet" media="screen">
     <meta name="description" content="Improve your mood thanks to this simple, beautiful and scientifically proven mobile mood tracker. Available on App Store for FREE. "/>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
+<div class="container-fluid">
     <header class="row">
         <div class="span12 text-center">
-            <img src="img/logo.png" alt="HAY logo" class="logo-top" />
+            <img src="img/logo.png" alt="HAY logo" style="margin-top: 40px;" class="logo-top" />
         </div>
     </header><!-- header -->
     <div class="row" id="info" class="text-center">
