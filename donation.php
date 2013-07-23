@@ -17,11 +17,14 @@
         </div>
     </header><!-- header -->
     <div class="row" id="info" class="text-center">
-        <div class="span12 text-center">
+        <div class="span12 text-center donate">
         <?php
             switch($_GET['type']):
             case "1":
-                echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                echo '
+                    <h2>Click PayPal Donate to donate 1$</h2>
+                    (you will be redirected to PayPal)<br>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="RXRMY7HBC47TN">
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -29,7 +32,10 @@
                     </form>';
                 break;
             case "5":
-                echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                echo '
+                    <h2>Click PayPal Donate to donate 5$</h2>
+                    (you will be redirected to PayPal)<br>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="QCVJEEEHA63TG">
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -37,7 +43,10 @@
                     </form>';
                 break;
             default:
-                echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                echo '
+                    <h2>Click PayPal Donate to donate any amount</h2>
+                    (you will be redirected to PayPal)<br>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="GADRFRB5BYXYN">
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
