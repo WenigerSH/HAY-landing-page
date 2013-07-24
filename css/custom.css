@@ -276,7 +276,7 @@ footer {
 		footer #credits {
 			text-align: center;
 			color: #2a344f;
-			padding-top: 200px;
+			padding-top: 120px;
 			padding-bottom: 35px;
 		}
 
@@ -303,4 +303,10 @@ h3 {
 }
 div.donate form {
     margin-top: 20px;
+}
+img.android-logo {
+		display: inline;
+}
+div#android-notif {
+	margin-top: 24px;
 }
