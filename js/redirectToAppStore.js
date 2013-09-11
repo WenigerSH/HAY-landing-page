@@ -6,4 +6,6 @@
  * To change this template use File | Settings | File Templates.
  */
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
-window.location = 'https://itunes.apple.com/pl/app/how-are-you-mood-tracker/id691974213?mt=8';
+if(iOS) {
+	window.location = 'https://itunes.apple.com/pl/app/how-are-you-mood-tracker/id691974213?mt=8';
+}
