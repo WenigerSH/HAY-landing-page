@@ -1,6 +1,7 @@
 <?php
 if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'facebook') !== false) {
-    header('Location: http://gethowareyou.com/img/logo.png');
+    header('Content-Type: image/png');
+    echo(file_get_contents("img/logo.png"));
     exit;
 }
 ?>
