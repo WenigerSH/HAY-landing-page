@@ -1,136 +1,140 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Free Mood Tracker Mobile App - "How Are You"</title>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/flexslider.css" rel="stylesheet" media="screen">
-    <link href="css/custom.css" rel="stylesheet" media="screen">
-    <link rel="image_src" href="http://gethowareyou.com/img/appIconBig.png?v=1" />
-    <meta name="description" content="Improve your mood thanks to this simple, beautiful and scientifically proven mobile mood tracker. Available on App Store for FREE. "/>
-    <meta charset="utf-8"/>
-    <script type="text/javascript" src="js/redirectToAppStore.js"></script>
-</head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>How Are You</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<body>
-    <div class="container">
-        <header class="row">
-            <div class="span6">
-                <img src="img/logo.png" alt="HAY logo" class="logo-top" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    
+        <header>
+
+            <div class="container">
+                <h2>Mood ranking</h2>
+                <div class="mood-ranking row">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item mood-up">
+                            1. United States 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item mood-down">
+                            6. United States 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item mood-up">
+                            6. United States 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item">
+                            1. United States 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item mood-up">
+                            2. Poland 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item mood-up">
+                            7. Poland 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item">
+                            7. Poland 74<span>/100</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="mood-ranking-item">
+                            7. Poland 74<span>/100</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="span6">
-                <a href="https://itunes.apple.com/us/app/how-are-you-mood-tracker/id691974213?mt=8&uo=4"><img src="img/appstore-top.png" class="pull-right" alt="AppStore" /></a>
-            </div>    
-        </header><!-- header -->
-        <div class="row" id="info">
-            <div class="info-wrapper">
-                <img src="img/icon.png" alt="HAY icon" class="hay-icon" />
-                <h2>Lift up your mood</h2>
-                <h3>with a simple tracking app</h3>
-                <img src="img/chart.png" alt="mood chart" class="mood-chart" />
-                <p style="margin-left: 2px;"><span>Research had proven</span> that by simply tracking something we are getting better at it. It applies to weight loss, money saving, bodybuilding and your mood as well.</p>
+
+        </header>
+
+        <section id="content">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/logo.png" alt="How Are You" class="img-responsive logo" />
+                        <div class="feature know-icon">
+                            <h2>1. Know yourself better</h2>
+                            <p>By measuring your mood and circumstances of it you can tell what makes you down, and up. </p>
+                        </div>
+                        <div class="feature participate-icon">
+                            <h2>2. Participate in global analysis</h2>
+                            <p>Participate in global mood tracking program! Help others by helping yourself. </p>
+                        </div>
+                        <div class="feature improve-icon">
+                            <h2>3. Improve your mood</h2>
+                            <p>When you keep track of something you are getting better at it.</p>
+                        </div>                                                
+                    </div>
+                    <div class="col-md-6 screen">
+                        <img src="img/screen.png" alt="How Are You screens" class="img-responsive" />
+                    </div>
+                </div>
             </div>
-            <img src="img/app.png" alt="app" class="app-view" />
-        </div><!-- info -->
-    </div><!-- container -->
-    <div id="slider">
-        <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <div class="slide slide-1">
-                        <img src="img/slide-1.png" alt="slide-1" class="slide-1-photo pull-left"/>
-                        <h2>Step 1. Measure your mood</h2>
-                        <p>Determine your mood using proven <span><a href="http://en.wikipedia.org/wiki/Affect_measures"> the Positive and Negative Affect Schedule (PANAS)</a></span> in less than 2 minutes.</p> 
-                        <p>
-                            We ask you how strong do you feel separate emotions and calculate your mood based on that. 
-                        </p>
-                        <p>
-                            E.g. how <strong>interested (wanting to be involved in something)</strong> do you feel right now?
-                        </p>
-                        <img src="img/slide-1-lights.png" alt="slide-1-lights" class="slide-1-lights" />
-                    </div>
-                </li>
-                <li>
-                    <div class="slide slide-2">
-                        <img src="img/slide-2.png" alt="slide-2" class="slide-2-photo pull-left"/>
-                        <h2>Step 2. Track your scores</h2>
-                        <p>Track your daily scores to learn what could be causing your ups and downs.</p>
-                        <p>Add notes to your scores for a more verbal detailed.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="slide slide-3">
-                        <h2>Step 3. Lift your mood</h2>
-                        <p>After few weeks your mood should be increasing.<br>It's a natural effect. When you keep track of something you are getting better at it. <span>It's free</span> so why not give it a try? </p>
-                        <img src="img/slide-3.png" alt="slide-3" class="slide-3-photo" />
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><!-- slider -->
-    <div class="container">
+
+        </section>
 
         <footer>
-            <img src="img/logo-white.png" alt="HAY logo" class="hay-logo-white" />
-            <div class="row">
-                <section id="social" class="span3">
-                    <p>Follow us</p>
-                    <div class="social-bg">
-                        <a href="https://twitter.com/QuantumLabCo"><img src="img/twitter.png" alt="twitter" /></a>
-                        <a href="http://pinterest.com/quantumlab/"><img src="img/pinterest.png" alt="pinterest" /></a>
-                    </div>
-                </section>
 
-                <section id="form" class="span6">
-                    <div class="row">
-                        <p>Signup for more updates</p>
-                        <form method="POST" action="addLead.php" id="addLeadForm">
-                            <input type="text" name="email" required="required" class="input-email" placeholder="enter your email" />
-                            <input type="submit" value="Send" class="submit" />
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="#"><img src="img/app-icon.png" alt="How Are You icon" class="img-responsive app-icon" /></a>
+                        <a href="#"><img src="img/appstore-icon.png" alt="How Are You app store" class="img-responsive store-icon" /></a>
+                        <a href="#"><img src="img/googleplay-icon.png" alt="How Are You google play" class="img-responsive store-icon" /></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <form method="post">
+                            <div class="input-wrapper">
+                                <input type="email" name="email" placeholder="Sign up for more info" class="email-field form-control" />
+                                <input type="submit" value="Send" class="btn-submit btn" />
+                            </div>
                         </form>
                     </div>
-                    <div class="row" id="android-notif">
-                        <p>Want <img src="img/android.png" alt="Android" class="android-logo" /> version? Let us know.</p>
-                        <form method="POST" action="addAndroidLead.php" id="addLeadForm">
-                            <input type="text" name="email" required="required" class="input-email" placeholder="enter your email" />
-                            <input type="submit" value="Send" class="submit" />
-                        </form>
-                    </div>
-                </section>
 
-                <section id="appstore" class="span3">
-                    <p>Get it for IPhone now</p>
-                    <a href="https://itunes.apple.com/us/app/how-are-you-mood-tracker/id691974213?mt=8&uo=4"><img src="img/appstore-bottom.png" alt="AppStore" class="appstore-bottom" /></a>
-                </section>
+                </div>
+
             </div>
 
-            <div class="row" id="credits">
-                <div class="footer-line"></div>
-                <p><img src="img/hay-logo-small.png" alt="HAY" /> is made by <a href="http://www.quantumlab.co"><img src="img/quantum-logo.png" alt="Quantum Lab" /></a>.</p>
-            </div>
         </footer>
-    </div> 
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <section id="copyright">
 
-      ga('create', 'UA-36811418-2', 'gethowareyou.com');
-      ga('send', 'pageview');
+            <div class="container">
+                <a href="http://quantumlab.co"><img src="img/quantumlab-logo.png" alt="Quantum Lab" /></a>
+            </div>
+        
+        </div>
 
-    </script>  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="js/noty/jquery.noty.js"></script>
-    <script type="text/javascript" src="js/noty/layouts/top.js"></script>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 
-    <script type="text/javascript" src="js/noty/layouts/topRight.js"></script>
-    <script type="text/javascript" src="js/noty/themes/default.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>   
-    <script type="text/javascript" src="js/custom.js"></script>  
-
-</body>  
+    </body>
 </html>
