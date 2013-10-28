@@ -7,13 +7,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>How Are You</title>
-        <meta name="description" content="">
+        <meta name="description" content="Improve your mood thanks to this simple, beautiful and scientifically proven mobile mood tracker. Available on App Store for FREE. ">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <link rel="image_src" href="http://gethowareyou.com/img/appIconBig.png?v=1" />
+    
+        <script type="text/javascript" src="js/redirectToAppStore.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -101,13 +104,13 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <a href="#"><img src="img/app-icon.png" alt="How Are You icon" class="img-responsive app-icon" /></a>
-                        <a href="#"><img src="img/appstore-icon.png" alt="How Are You app store" class="img-responsive store-icon" /></a>
+                        <a href="http://gethowareyou.com/"><img src="img/app-icon.png" alt="How Are You icon" class="img-responsive app-icon" /></a>
+                        <a href="https://itunes.apple.com/us/app/how-are-you-mood-tracker/id691974213?mt=8&uo=4"><img src="img/appstore-icon.png" alt="How Are You app store" class="img-responsive store-icon" /></a>
                         <a href="#"><img src="img/googleplay-icon.png" alt="How Are You google play" class="img-responsive store-icon" /></a>
                     </div>
 
                     <div class="col-md-4">
-                        <form method="post">
+                        <form method="post" action="addLead.php" id="addLeadForm">
                             <div class="input-wrapper">
                                 <input type="email" name="email" placeholder="Sign up for more info" class="email-field form-control" />
                                 <input type="submit" value="Send" class="btn-submit btn" />
@@ -130,11 +133,18 @@
         </div>
 
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-36811418-2', 'gethowareyou.com');
+          ga('send', 'pageview');
+
+        </script>  
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>   
+        <script type="text/javascript" src="js/custom.js"></script>
 
     </body>
 </html>
