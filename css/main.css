@@ -1,0 +1,305 @@
+
+
+/* ==========================================================================
+   How Are You
+   Author: Paweł Jędrzejczyk <contact@paweljedrzejczyk.com>
+   Quantum Lab
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/titilliummaps29l-1wt.eot');
+    src: url('../fonts/titilliummaps29l-1wt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliummaps29l-1wt.woff') format('woff'),
+         url('../fonts/titilliummaps29l-1wt.ttf') format('truetype'),
+         url('../fonts/titilliummaps29l-1wt.svg#titilliummaps29l1_wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/titilliummaps29l-400wt.eot');
+    src: url('../fonts/titilliummaps29l-400wt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliummaps29l-400wt.woff') format('woff'),
+         url('../fonts/titilliummaps29l-400wt.ttf') format('truetype'),
+         url('../fonts/titilliummaps29l-400wt.svg#titilliummaps29l400_wt') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/titilliummaps29l-800wt.eot');
+    src: url('../fonts/titilliummaps29l-800wt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliummaps29l-800wt.woff') format('woff'),
+         url('../fonts/titilliummaps29l-800wt.ttf') format('truetype'),
+         url('../fonts/titilliummaps29l-800wt.svg#titilliummaps29l800_wt') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+	background: #dfe3e4;
+	font-family: Titillium, sans-serif;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+	background: #58bbfc; /* Old browsers */
+	background: -moz-linear-gradient(left,  #58bbfc 0%, #489dd4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#58bbfc), color-stop(100%,#489dd4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #58bbfc 0%,#489dd4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #58bbfc 0%,#489dd4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #58bbfc 0%,#489dd4 100%); /* IE10+ */
+	background: linear-gradient(to right,  #58bbfc 0%,#489dd4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58bbfc', endColorstr='#489dd4',GradientType=1 ); /* IE6-9 */
+	font-size: 18px;
+	color: #fff;
+	border-bottom: 10px solid #4ba6d8;
+}	
+	header .container {
+		background: url(../img/map.png) no-repeat 50% top;
+		background-size: cover;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	
+	header h2 {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-size: 24px;
+		font-family: Titillium, sans-serif;
+		color: #3e86b5;
+	}
+
+	header .mood-ranking span {
+		font-size: 12px;
+	}
+
+	.mood-ranking-item {
+		padding-left: 30px;
+		margin-bottom: 7px;
+		font-weight: bold;
+	}
+
+		.mood-ranking-item.mood-up {
+			background: url(../img/mood-up.png) no-repeat left center;
+		}
+
+		.mood-ranking-item.mood-down {
+			background: url(../img/mood-down.png) no-repeat left center;
+		}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */		
+
+#content {
+	background: url(../img/bg.jpg) center top no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+}
+
+	#content .logo {
+		margin-bottom: 25px;
+	}
+
+	#content .feature {
+		color: #fff;
+		padding-left: 100px;
+		margin-bottom: 35px;
+		min-height: 72px;
+	}
+
+	#content .feature.know-icon {
+		background: url(../img/icon-know.png) no-repeat 5px center;
+	}
+
+	#content .feature.participate-icon {
+		background: url(../img/icon-participate.png) no-repeat 12px center;
+	}
+
+	#content .feature.improve-icon {
+		background: url(../img/icon-improve.png) no-repeat 17px center;
+	}
+
+		#content .feature h2 {
+			font-family: Titillium, sans-serif;
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+
+		#content .feature p {
+			font-size: 18px;
+			line-height: 130%;
+		}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */		
+
+footer {
+	background: #f0f4f5;
+	padding: 20px 0;
+}
+
+	footer .store-icon {
+		height: 40px;
+	}
+
+	footer .app-icon {
+		height: 39px;
+		margin-top: 6px;
+	}	
+
+	footer a {
+		display: inline-block;
+		margin-left: 25px;
+	}
+
+		footer a:first-child {
+			margin-left: 0;
+		}
+
+	footer .input-wrapper {
+		margin-top: 15px;
+		position: relative;
+	}
+
+		footer input.btn-submit,
+		footer input.email-field {
+			-webkit-border-radius: 0;
+		       -moz-border-radius: 0;
+			        border-radius: 0;
+		}
+
+		footer input.btn-submit {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: #ff795d;
+			color: #fff;
+			font-weight: bold;
+			height: 35px;
+			width: 80px;
+			font-size: 16px;
+		}
+
+			footer input.btn-submit:hover {
+				color: #fff;
+				background: #f9907a;
+			}
+
+		footer input.email-field {
+			font-size: 16px;
+			height: 35px;
+			border: 0;
+			float: right;
+			background: #dfe3e4;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}	
+
+#copyright {
+	background: #dfe3e4;
+	padding: 20px 0;
+}	
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media screen and (min-width: 500px) {
+	header .container {
+		background-size: auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+
+	header .mood-ranking span {
+		font-size: 14px;
+	}	
+
+	header {
+		font-size: 22px;
+	}
+
+	#content .feature h2 {
+		font-size: 30px;
+	}
+
+	#content .feature p {
+		font-size: 22px;
+	}
+
+	footer {
+		padding: 55px 0;
+	}	
+
+	footer .store-icon,
+	footer .app-icon {
+		height: auto;
+	}
+
+	footer input.email-field {
+		max-width: 365px;
+	}
+
+	#content {
+		padding-top: 70px;
+	}
+
+		#content .feature {
+			margin-bottom: 60px;
+		}
+
+		#content .logo {
+			margin-bottom: 55px;
+		}
+
+	#content .row {
+		display: table;
+	}
+
+		#content .row .col-md-6 {
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+		}
+
+		#content .row .col-md-6.screen {
+			vertical-align: bottom;
+		}
+
+	footer input.btn-submit {
+		height: 55px;
+		font-size: 20px;
+	}
+
+	footer input.email-field {
+		font-size: 20px;
+		height: 55px;
+	}		
+}	
+
+
+@media screen and (min-width: 1200px) {
+	header {
+		font-size: 24px;
+	}
+
+		header .container {
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+}
+
+
+
