@@ -59,7 +59,6 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58bbfc', endColorstr='#489dd4',GradientType=1 ); /* IE6-9 */
 	font-size: 18px;
 	color: #fff;
-	border-bottom: 10px solid #4ba6d8;
 }	
 	header .container {
 		background: url(../img/map.png) no-repeat 50% top;
@@ -94,12 +93,29 @@ header {
 			background: url(../img/mood-down.png) no-repeat left center;
 		}
 
+	header #headline {
+		background: #4094CA;
+		padding-top: 10px;
+		padding-bottom: 13px;
+	}
+
+		header #headline h2 {
+			text-align: center;
+			font-size: 45px;
+			color: #fff;
+			text-transform: uppercase;
+			line-height: 120%;
+			margin: 0;
+			font-weight: 800;
+			letter-spacing: 1.7px;
+		}
+
 /* ==========================================================================
    Content
    ========================================================================== */		
 
 #content {
-	background: url(../img/bg.jpg) center top no-repeat;
+	background: url(../img/bg2.jpg) center top no-repeat;
 	background-size: cover;
 	padding-top: 30px;
 }
@@ -110,7 +126,7 @@ header {
 
 	#content .feature {
 		color: #fff;
-		padding-left: 100px;
+		padding-left: 115px;
 		margin-bottom: 35px;
 		min-height: 72px;
 	}
@@ -120,11 +136,11 @@ header {
 	}
 
 	#content .feature.participate-icon {
-		background: url(../img/icon-participate.png) no-repeat 12px center;
+		background: url(../img/icon-test.png) no-repeat 5px center;
 	}
 
 	#content .feature.improve-icon {
-		background: url(../img/icon-improve.png) no-repeat 17px center;
+		background: url(../img/icon-improve.png) no-repeat 13px center;
 	}
 
 		#content .feature h2 {
