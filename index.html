@@ -33,6 +33,7 @@
         _kms('//i.kissmetrics.com/i.js');
         _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
         </script>
+
     </head>
     <body>
     
@@ -124,7 +125,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <a href="#" title="How Are You app icon"><img src="img/app-icon.png" alt="How Are You icon" class="img-responsive app-icon" /></a>
-                        <a title="download How Are You mood tracker for iOS from App Store" href="https://itunes.apple.com/us/app/how-are-you-mood-tracker/id691974213?mt=8&uo=4"><img src="img/appstore-icon.png" alt="How Are You app store" class="img-responsive store-icon" /></a>
+                        <a id="ios-download-link" title="download How Are You mood tracker for iOS from App Store" href="https://itunes.apple.com/us/app/how-are-you-mood-tracker/id691974213?mt=8&uo=4"><img src="img/appstore-icon.png" alt="How Are You app store" class="img-responsive store-icon" /></a>
                         <a href="#" title="How Are You on Android soon"><img src="img/googleplay-icon.png" alt="How Are You google play" class="img-responsive store-icon" /></a>
                     </div>
 
@@ -171,6 +172,19 @@
         <script type="text/javascript" src="js/noty/themes/default.js"></script>
 
         <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript">
+            /** kiss metrics */
+            /** download an ios app */
+            var downloadLink = document.getElementById("ios-download-link");
+            downloadLink.onclick = function() {
+                _kmq.push(['record', 'redirected to App Store']);
+            }
+            /** subscribed to newsletter */
+            var newsletterForm = document.getElementById("addLeadForm");
+            newsletterForm.onsubmit = function() {
+                _kmq.push(['record', 'signed to newsletter']);
+            }
 
+        </script>
     </body>
 </html>
