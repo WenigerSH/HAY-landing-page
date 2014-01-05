@@ -1,4 +1,5 @@
-<header id="home" role="banner">
+<div id="home"></div>
+<header role="banner">
   <div class="container">
     <div class="row">
       <div class="col-xs-3 logo">

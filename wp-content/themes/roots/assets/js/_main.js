@@ -5,9 +5,26 @@ var HowAreYou = {
   // All pages
   common: {
     init: function() {
-      jQuery("li.menu-home").addClass('active');
+      var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+      if(iOS) {
+        window.location = 'https://itunes.apple.com/pl/app/how-are-you-mood-tracker/id691974213?mt=8';
+      }
+      
+      if(jQuery(".home").length === 0) {
+        var site_url = $(".logo a").attr('href');
+        jQuery(".main-nav a, .bottom-nav a").each(function() {
+          var current_href = $(this).attr('href');
+          if(current_href !== '#contact') {
+            $(this).addClass('external-link');
+            $(this).click(function() {
+              window.location.href = site_url+current_href;
+            });
+          }
+        });
+      }
 
-      jQuery(".main-nav a, .bottom-nav a").smoothScroll({
+      jQuery(".main-nav a:not(.external-link), .bottom-nav a:not(.external-link)").smoothScroll({
+        offset: -94,
         beforeScroll: function(e) {
           jQuery("li.active").removeClass('active');
         }
@@ -16,12 +33,38 @@ var HowAreYou = {
         jQuery("a[href="+hash+"]").parent().addClass('active');
       });
 
+      jQuery("header").affix({
+        offset: {
+          top: function() {
+            if (jQuery(".homepage-slider").length > 0) {
+              return 575;
+            } else {
+              return 10;
+            }
+          }
+        }
+      });
+
     },
     finalize: function() { }
   },
   // Home page
   home: {
     init: function() {
+      var current_hash = window.location.hash;
+
+      if(jQuery(current_hash).length > 0) {
+        var menu_item = current_hash.replace('#', '');
+        jQuery("li.menu-"+menu_item).addClass('active');
+        jQuery('html,body').animate({
+          scrollTop: jQuery('#' + menu_item).offset().top-94
+        }, 400);
+      } else {
+        jQuery("li.menu-home").addClass('active');
+      }
+
+      window.location.hash = '';
+
       var slidesAmount = revapi1.revmaxslide();
       var currentSlide = 1;
       var stripeWidth = 100/slidesAmount;

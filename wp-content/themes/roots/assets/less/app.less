@@ -10,34 +10,23 @@
 
 @font-face {
     font-family: 'Titillium';
-    src: url('../fonts/titilliummaps29l-1wt.eot');
-    src: url('../fonts/titilliummaps29l-1wt.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/titilliummaps29l-1wt.woff') format('woff'),
-         url('../fonts/titilliummaps29l-1wt.ttf') format('truetype'),
-         url('../fonts/titilliummaps29l-1wt.svg#titilliummaps29l1_wt') format('svg');
+    src: url('../fonts/titilliumtext22l-250wt.eot');
+    src: url('../fonts/titilliumtext22l-250wt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumtext22l-250wt.woff') format('woff'),
+         url('../fonts/titilliumtext22l-250wt.ttf') format('truetype'),
+         url('../fonts/titilliumtext22l-250wt.svg#titilliumtext22l250_wt') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Titillium';
-    src: url('../fonts/titilliummaps29l-400wt.eot');
-    src: url('../fonts/titilliummaps29l-400wt.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/titilliummaps29l-400wt.woff') format('woff'),
-         url('../fonts/titilliummaps29l-400wt.ttf') format('truetype'),
-         url('../fonts/titilliummaps29l-400wt.svg#titilliummaps29l400_wt') format('svg');
+    src: url('../fonts/titilliumtext22l-600wt.eot');
+    src: url('../fonts/titilliumtext22l-600wt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumtext22l-600wt.woff') format('woff'),
+         url('../fonts/titilliumtext22l-600wt.ttf') format('truetype'),
+         url('../fonts/titilliumtext22l-600wt.svg#titilliumtext22l600_wt') format('svg');
     font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Titillium';
-    src: url('../fonts/titilliummaps29l-800wt.eot');
-    src: url('../fonts/titilliummaps29l-800wt.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/titilliummaps29l-800wt.woff') format('woff'),
-         url('../fonts/titilliummaps29l-800wt.ttf') format('truetype'),
-         url('../fonts/titilliummaps29l-800wt.svg#titilliummaps29l800_wt') format('svg');
-    font-weight: 800;
     font-style: normal;
 }
 
@@ -53,7 +42,7 @@
 @defaultFont: 'Titillium', sans-serif;
 @footerTextColor: #3b475f;
 @footerBackgroundColor: #0e1c31;
-@headerBackgroundColor: #41a0dd;
+@headerBackgroundColor: #3090d5;
 
 /* ==========================================================================
    Base
@@ -156,14 +145,14 @@ body {
       }
    }
 }  
-   
+
 header {
    padding: 30px 0;
-   position: absolute;
    left: 0;
    top: 0;
    right: 0;
-   z-index: 99;
+   z-index: 101;
+   background: @headerBackgroundColor;
    
    .main-nav ul {
       position: relative;
@@ -518,7 +507,7 @@ header {
 
    h3 {
       font-size: 36px;
-      font-weight: 800;
+      font-weight: bold;
    }
 
    p {
@@ -599,7 +588,6 @@ header {
 .contact {
    background: @darkBlueColor;
    padding: 50px 0;
-   margin-top: 75px;
    
    #mc4wp-form-1 {
       margin-bottom: 50px;
@@ -656,7 +644,7 @@ header {
          display: none;
       }
 
-      .wpcf7-validation-errors {
+      .wpcf7-response-output {
          margin: 0;
          border: 1px solid @footerTextColor;
          color: @lightGray;
@@ -851,6 +839,99 @@ header {
    }
 }
 
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+.home {
+   header {
+      background: none;
+      
+      &.affix-top {
+         position: absolute;
+      }
+      
+      &.affix {
+         background: @headerBackgroundColor;
+      }
+   }
+
+   .contact {
+      margin-top: 75px;
+   }
+}
+
+/* ==========================================================================
+   Static Pages
+   ========================================================================== */
+   
+.dashed-line {
+   background: url(../img/border.png);
+   height: 1px;
+   margin: 20px 0
+}   
+   
+.static-page-title {
+   padding: 90px 0;
+   
+   h2 {
+      font-size: 36px;
+      color: @darkBlueColor;
+      text-transform: none;
+      margin: 0;
+      padding: 0;
+      
+      &:after {
+         content: none;
+      }
+   }
+}   
+
+.static-page-content {
+   background: @grayColor;
+   padding: 55px 0;
+   
+   h2 {
+      font-size: 22px; 
+      color: @darkBlueColor;
+      padding: 0;
+      margin-bottom: 10px;
+      text-align: left;
+      
+      &:after {
+         content: none;
+      }
+   }
+
+   p {
+      font-size: 18px;
+      text-align: left;
+   }
+
+   a {
+      color: @linkColor;
+      text-decoration: underline;
+      
+      &:hover {
+         text-decoration: none;
+      }
+   }
+
+   ul {
+      padding: 0;
+      
+      li {
+         list-style-type: none;
+         display: inline-block;
+         margin-bottom: 5px;
+         
+         a {
+            font-size: 18px;
+            color: @darkBlueColor;
+         }
+      }
+   }
+}
 
 /* ==========================================================================
    WordPress Generated Classes
