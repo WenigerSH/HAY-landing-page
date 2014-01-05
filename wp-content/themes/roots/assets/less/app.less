@@ -43,6 +43,7 @@
 @footerTextColor: #3b475f;
 @footerBackgroundColor: #0e1c31;
 @headerBackgroundColor: #3090d5;
+@headerBackgroundColorOpacity: rgba(48, 144, 213, 0.9);
 
 /* ==========================================================================
    Base
@@ -153,7 +154,8 @@ header {
    right: 0;
    z-index: 101;
    background: @headerBackgroundColor;
-   
+   background: @headerBackgroundColorOpacity;
+
    .main-nav ul {
       position: relative;
       top: 6px;
@@ -853,6 +855,7 @@ header {
       
       &.affix {
          background: @headerBackgroundColor;
+         background: @headerBackgroundColorOpacity;
       }
    }
 
