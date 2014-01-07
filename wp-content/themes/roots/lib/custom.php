@@ -23,3 +23,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 	$existing_mimes['eps'] = 'application/postscript'; 
 	return $existing_mimes;
 }
+
+remove_filter('the_content', 'wptexturize');
+remove_filter('comment_text', 'wptexturize');
+remove_filter('the_excerpt', 'wptexturize');
