@@ -131,6 +131,7 @@
 					
 .tp-caption.large_text{
 			position: absolute; 
+  text-align: center;
 			color: #fff; 
 			text-shadow: none; 
 			font-weight: 800; 
