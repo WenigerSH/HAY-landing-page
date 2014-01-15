@@ -6,8 +6,11 @@ var HowAreYou = {
   common: {
     init: function() {
       var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+      var Android = ( navigator.userAgent.match(/(Android)/g) ? true : false );
       if(iOS) {
         window.location = 'https://itunes.apple.com/pl/app/how-are-you-mood-tracker/id691974213?mt=8';
+      } else if (Android) {
+        window.location = 'https://play.google.com/store/apps/details?id=co.quantumlab.howareyou';
       }
       
       if(jQuery(".home").length === 0) {
