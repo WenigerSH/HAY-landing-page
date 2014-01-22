@@ -26,7 +26,7 @@
         <div class="visit-logo"></div>
       </div>
     </a>
-    <p>anti-depresion articles</p>
+    <p>anti-depression articles</p>
   </div>
 
 </header>
