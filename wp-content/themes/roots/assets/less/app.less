@@ -165,7 +165,7 @@ header {
       li {
          list-style-type: none;
          display: inline-block;
-         padding-left: 80px;
+         padding-left: 50px;
          position: relative;
          
          a {
@@ -195,9 +195,9 @@ header {
    .visit-our-blog {
       position: absolute;
       top: 25px;
-      right: 25px;
+      left: 870px;
+      width: 135px;
       color: #fff; 
-      display: none;
       
       .visit-our-blog-inner {
          display: table;
@@ -240,9 +240,16 @@ header {
       }
    }
 
-   @media (min-width: 1300px) {
+   @media (min-width: 1045px) {
       .visit-our-blog {
-         display: block;
+         left: auto;
+         right: 25px;
+      }
+   }
+
+   @media (min-width: 1300px) {
+      .main-nav ul li { 
+         padding-left: 80px;
       }
    }
 }   
@@ -371,6 +378,7 @@ header {
       .aligncenter;
       margin-top: 80px;
       margin-bottom: 0;
+      max-width: 100%;
    }
 
    h3 {
