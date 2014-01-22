@@ -297,3 +297,5 @@
 .tp-caption a:hover { 
 	color: #ffa902; 
 }
+
+.tp-caption iframe { border: 0; }
