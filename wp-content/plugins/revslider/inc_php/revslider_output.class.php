@@ -821,7 +821,8 @@
 					tpj.noConflict();
 				<?php endif;?>
 				
-				var revapi<?php echo $sliderID?>;
+				//var revapi<?php echo $sliderID?>;
+				var revapi1;
 				
 				tpj(document).ready(function() {
 				
@@ -831,7 +832,8 @@
 				if(tpj('#<?php echo $this->sliderHtmlID?>').revolution == undefined)
 					revslider_showDoubleJqueryError('#<?php echo $this->sliderHtmlID?>');
 				else
-				   revapi<?php echo $sliderID?> = tpj('#<?php echo $this->sliderHtmlID?>').show().revolution(
+				   //revapi<?php echo $sliderID?> = tpj('#<?php echo $this->sliderHtmlID?>').show().revolution(
+				   revapi1 = tpj('#<?php echo $this->sliderHtmlID?>').show().revolution(
 					{
 						delay:<?php echo $this->slider->getParam("delay","9000",RevSlider::FORCE_NUMERIC)?>,
 						startwidth:<?php echo $this->slider->getParam("width","900")?>,

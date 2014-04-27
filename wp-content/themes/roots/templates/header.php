@@ -1,5 +1,8 @@
 <div id="home"></div>
 <header role="banner">
+  <div style="position: relative; top: 37px;">
+  	<ul> </ul>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-xs-3 logo">
@@ -21,12 +24,12 @@
     <a href="http://blog.gethowareyou.com/">
       <div class="visit-our-blog-inner">
         <div class="visit-text">
-          <p>Visit our blog</p>
+          <p><?php _e('Visit our blog', 'roots'); ?></p>
         </div>
         <div class="visit-logo"></div>
       </div>
     </a>
-    <p>anti-depression articles</p>
+    <p style="text-align: center"><?php _e('anti-depression articles', 'roots'); ?></p>
   </div>
 
 </header>

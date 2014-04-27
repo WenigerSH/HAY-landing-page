@@ -281,3 +281,11 @@ msgstr "Szukaj:"
 #: templates/searchform.php:3 templates/searchform.php:4
 msgid "Search"
 msgstr "Szukaj"
+
+#: templates/header.php:25
+msgid "Visit our blog"
+msgstr "Odwiedź nasz blog"
+
+#: templates/header.php:30
+msgid "anti-depression articles"
+msgstr "artykuły antydepresyjne"

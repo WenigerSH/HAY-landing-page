@@ -14,9 +14,9 @@
     		</div>
     		<div class="col-xs-5 bottom-nav">
 				<?php
-	              if (has_nav_menu('primary_navigation')) :
-	                wp_nav_menu(array('theme_location' => 'primary_navigation'));
-	              endif;
+	              //if (has_nav_menu('primary_navigation')) :
+	              //  wp_nav_menu(array('theme_location' => 'primary_navigation'));
+	              //endif;
 	            ?>
     		</div>
     		<div class="col-xs-3 bottom-side-nav">
