@@ -70,8 +70,8 @@ var HowAreYou = {
 
       jQuery(".slide .btn").click(function() {
         if (jQuery(this).not(":disabled")) {
-          //jQuery(this).parents(".slide").slideUp().next().slideDown();
-          jQuery(this).parents(".slide").hide().next().show();
+          jQuery(this).parents(".slide").slideUp().next().slideDown();
+          //jQuery(this).parents(".slide").hide().next().show();
         }
       });
 
