@@ -135,8 +135,11 @@
 <div class="test-wrapper" style="display: none">
   <div class="slide introduction">
     <div class="slide-content">
+      <h2><?php pll_e('About CESD-R'); ?></h2>
       <p><?php pll_e("The CESD-R is a screening test for depression and depressive disorder. The CESD-R measures symptoms defined by the American Psychiatric Association' Diagnostic and Statistical Manual (DSM-IV) for a major depressive episode.");?></p>
       <p><?php pll_e("At the top of each of the following screens, you will see a statement. For each statement, please indicate how often you have felt this way recently by selecting the option you most agree with.");?></p>
+      <p class="reference"><?php pll_e('Reference: Eaton, W. W., Smith, C., Ybarra, M., Muntaner, C., Tien, A. (2004). Center for Epidemiologic Studies Depression Scale: review and revision (CESD and CESD-R). In ME Maruish (Ed.). The Use of Psychological Testing for Treatment Planning and Outcomes Assessment (3rd Ed.), Volume 3: Instruments for Adults, pp. 363-377. Mahwah, NJ: Lawrence Erlbaum.');?></p>
+      <p class="more-info"><?php pll_e('More info:');?> <a href="http://cesd-r.com/" target="_blank">http://cesd-r.com/</a></p>
     </div>
     <div class="slide-footer">
       <button class="btn btn-in-test"><?php pll_e('Start the test'); ?></button>
@@ -147,6 +150,7 @@
   <div class="slide question question-<?=$i;?>" style="display: none">
     <div class="slide-content">
       <h2><?=$q['question']; ?></h2>
+      <p class="agree-the-most"><?php pll_e('(Choose the option you most agree with)'); ?></p>
       <?php foreach ($options as $o) : ?>
         <input type="radio" name="<?=$q['key'];?>" id="<?=$q['key'];?>_<?=$o['key'];?>" value="<?=$o['value'];?>"/>
         <label for="<?=$q['key'];?>_<?=$o['key'];?>"><?=$o['option'];?></label>

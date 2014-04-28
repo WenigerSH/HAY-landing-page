@@ -81,8 +81,14 @@ if(function_exists('pll_register_string')) {
     pll_register_string('score_suicide', 'Suicide');
     pll_register_string('score_explanation', 'Score Explanation');
 
+    pll_register_string('test_about', 'About CESD-R');
+
     pll_register_string('test_introduction_1', "The CESD-R is a screening test for depression and depressive disorder. The CESD-R measures symptoms defined by the American Psychiatric Association' Diagnostic and Statistical Manual (DSM-IV) for a major depressive episode.");
     pll_register_string('test_introduction_1', "At the top of each of the following screens, you will see a statement. For each statement, please indicate how often you have felt this way recently by selecting the option you most agree with.");
+    pll_register_string('reference', 'Reference: Eaton, W. W., Smith, C., Ybarra, M., Muntaner, C., Tien, A. (2004). Center for Epidemiologic Studies Depression Scale: review and revision (CESD and CESD-R). In ME Maruish (Ed.). The Use of Psychological Testing for Treatment Planning and Outcomes Assessment (3rd Ed.), Volume 3: Instruments for Adults, pp. 363-377. Mahwah, NJ: Lawrence Erlbaum.');
+    pll_register_string('more_info', 'More info:');
+
+    pll_register_string('agree_the_most', '(Choose the option you most agree with)');
 
 }
 
