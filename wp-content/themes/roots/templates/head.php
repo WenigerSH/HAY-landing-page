@@ -26,5 +26,16 @@
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
   <link rel="shortcut icon" type="image/gif" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.gif" />
 
+	<script>
+		var _prum = [['id', '535e7843abe53d734c4a1e0d'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+		(function() {
+    		var s = document.getElementsByTagName('script')[0]
+      		, p = document.createElement('script');
+    		p.async = 'async';
+    		p.src = '//rum-static.pingdom.net/prum.min.js';
+		    s.parentNode.insertBefore(p, s);
+		})();
+	</script>
 </head>
 
