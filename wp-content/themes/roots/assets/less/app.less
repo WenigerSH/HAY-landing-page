@@ -92,7 +92,7 @@ body {
    ========================================================================== */
 
 .test-wrapper {
-  position: fixed;
+  position: absolute;
   z-index: 99999;
   top: 120px;
   left: 50%;
@@ -138,6 +138,17 @@ body {
       p {
         color: @linkColor;
       }
+    }
+
+    .hay-placement {
+      display: inline-block;
+      padding: 10px 30px;
+      margin-left: -30px;
+      margin-right: -30px;
+      background: lighten(@blueColor, 15%);
+      color: #fff;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     .score-bar {

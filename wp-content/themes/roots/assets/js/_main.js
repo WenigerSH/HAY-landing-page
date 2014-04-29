@@ -56,7 +56,7 @@ var HowAreYou = {
         jQuery('.test-wrapper-overlay, .test-wrapper').fadeIn();
       });
 
-      jQuery('.test-wrapper-overlay').click(function() {
+      jQuery('.test-wrapper-overlay, .result .btn').click(function() {
           jQuery('.test-wrapper, .test-wrapper-overlay').fadeOut();
           clearTest();
       });

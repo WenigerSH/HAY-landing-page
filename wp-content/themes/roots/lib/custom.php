@@ -97,6 +97,9 @@ if(function_exists('pll_register_string')) {
     pll_register_string('category_5', 'Does not meet criteria for DSM - IV Depressive Disorder. Your answers suggest that depression is not a problem for you right now. Talk to your health care professional if you ever have symptoms like those listed above for more than a few days.');
     pll_register_string('question', 'Question');
 
+    pll_register_string('hay_placement_1', 'By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.');
+    pll_register_string('hay_placement_2', 'You can start monitoring your mood right now using the How Are You App. Thus, you will gain more information about your emotional states and you will be able to identify what factors influenced your mood. Together with How Are You App you will discover also how to prevent mood disorders and how you can take care of mental health.');
+
     pll_register_string('agree_the_most', '(Choose the option you most agree with)');
 
 }

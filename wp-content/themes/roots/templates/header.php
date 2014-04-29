@@ -187,18 +187,34 @@
         <div class="score-bar-stroke"></div>
       </div>
       <div class="score-category">
-        <p class="test-category category-1" style="display: none"><?php pll_e('Meets criteria for DSM-IV Major Depressive Disorder. Your answers suggest that depression is an important problem for you. We recommend that you make an appointment with a health care professional to discuss how you are feeling as soon as you can. Depression affects many people. There are good treatments for it.'); ?></p>
-        <p class="test-category category-2" style="display: none"><?php pll_e('Probably Meets criteria for DSM -IV Major Depressive Disorder. Further assessment is needed to determine if Major Depressive Disorder is present. Your answers suggest that depression might be a problem for you. We recommend that you talk about it with your health care professional soon. Depression affects many people. There are good treatments for it.'); ?></p>
-        <p class="test-category category-3" style="display: none"><?php pll_e('Probably Meets criteria for DSM -IV Minor Depressive Disorder. Your answers suggest that depression might be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.'); ?></p>
-        <p class="test-category category-4" style="display: none"><?php pll_e('Does not meet criteria for DSM - IV Depressive Disorder. Answers suggest depression syndrome may be present. Further assessment is needed. Your answers suggest that depression may be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.'); ?></p>
-        <p class="test-category category-5" style="display: none"><?php pll_e('Does not meet criteria for DSM - IV Depressive Disorder. Your answers suggest that depression is not a problem for you right now. Talk to your health care professional if you ever have symptoms like those listed above for more than a few days.'); ?></p>
+        <p class="test-category category-1" style="display: none">
+          <?php pll_e('Meets criteria for DSM-IV Major Depressive Disorder. Your answers suggest that depression is an important problem for you. We recommend that you make an appointment with a health care professional to discuss how you are feeling as soon as you can. Depression affects many people. There are good treatments for it.'); ?>
+          <span class="hay-placement"><?php pll_e('By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.'); ?></span>
+        </p>
+        <p class="test-category category-2" style="display: none">
+          <?php pll_e('Probably Meets criteria for DSM -IV Major Depressive Disorder. Further assessment is needed to determine if Major Depressive Disorder is present. Your answers suggest that depression might be a problem for you. We recommend that you talk about it with your health care professional soon. Depression affects many people. There are good treatments for it.'); ?>
+          <span class="hay-placement"><?php pll_e('By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.'); ?></span>
+        </p>
+        <p class="test-category category-3" style="display: none">
+          <?php pll_e('Probably Meets criteria for DSM -IV Minor Depressive Disorder. Your answers suggest that depression might be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.'); ?>
+          <span class="hay-placement"><?php pll_e('By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.'); ?></span>
+        </p>
+        <p class="test-category category-4" style="display: none">
+          <?php pll_e('Does not meet criteria for DSM - IV Depressive Disorder. Answers suggest depression syndrome may be present. Further assessment is needed. Your answers suggest that depression may be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.'); ?>
+          <span class="hay-placement"><?php pll_e('By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.'); ?></span>
+        </p>
+        <p class="test-category category-5" style="display: none">
+          <?php pll_e('Does not meet criteria for DSM - IV Depressive Disorder. Your answers suggest that depression is not a problem for you right now. Talk to your health care professional if you ever have symptoms like those listed above for more than a few days.'); ?>
+          <span class="hay-placement"><?php pll_e('You can start monitoring your mood right now using the How Are You App. Thus, you will gain more information about your emotional states and you will be able to identify what factors influenced your mood. Together with How Are You App you will discover also how to prevent mood disorders and how you can take care of mental health.'); ?></span>
+        </p>
       </div>
       <div class="suicide-ideation" style="display: none">
         <p><?php pll_e('Your answers show that you have been thinking about hurting yourself recently. Regardless of your responses on the rest of the items, you should schedule an appointment and discuss these feelings with a health professional as soon as you can.'); ?></p>
+
       </div>
     </div>
     <div class="slide-footer">
-      <a href="#" class="btn btn-in-test"><?php pll_e('Score Explanation'); ?></a>
+      <a href="#" class="btn btn-in-test"><?php pll_e('Finish'); ?></a>
     </div>
   </div>
 </div>
