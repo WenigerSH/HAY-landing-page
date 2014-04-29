@@ -126,7 +126,7 @@
     array(
       "option" => pll__('Nearly every day for two weeks'),
       "key" => "every_day",
-      "value" => "4"
+      "value" => "3"
     )
   );
 ?>
@@ -183,7 +183,7 @@
         </div>
       </div>
       <div class="score-bar">
-        <p><span class="score">0</span>/80</p>
+        <p><span class="score">0</span>/60</p>
         <div class="score-bar-stroke"></div>
       </div>
     </div>

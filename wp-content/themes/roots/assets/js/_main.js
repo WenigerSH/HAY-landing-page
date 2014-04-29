@@ -135,7 +135,7 @@ var HowAreYou = {
           jQuery(".result-suicide").text(score_suicide);
 
           jQuery(".score").text(score_total);
-          var score_percent = parseInt(score_total/80*100, 10);
+          var score_percent = parseInt(score_total/60*100, 10);
           if(score_percent < 13) {
             jQuery(".score-bar").addClass('no-stroke');
           }
