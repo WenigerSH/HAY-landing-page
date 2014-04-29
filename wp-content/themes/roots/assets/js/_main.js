@@ -64,7 +64,7 @@ var HowAreYou = {
       function clearTest() {
         jQuery(".test-wrapper .slide").hide();
         jQuery(".test-wrapper .introduction").show();
-        jQuery(".suicide-ideation").hide();
+        jQuery(".suicide-ideation, .test-category").hide();
         jQuery(".test-wrapper input:checked").prop('checked', false);
         jQuery(".test-wrapper .question button").prop('disabled', true);
       }
@@ -78,6 +78,8 @@ var HowAreYou = {
 
       jQuery(".slide label").click(function() {
         jQuery(this).parents(".slide").find(".btn-in-test").prop("disabled", false);
+        jQuery(this).parents(".slide").find(".question-number").hide();
+        jQuery(this).parents(".slide").find(".next-label").show();
       });
 
       jQuery(".question-20 .btn").click(function() {
@@ -147,6 +149,44 @@ var HowAreYou = {
           if(score_suicide >= 1) {
             jQuery('.suicide-ideation').show();
           }
+
+          var rest_questions = [
+            apetite,
+            keeping_mind,
+            restless,
+            get_going,
+            bad_person,
+            slept_more,
+            moving_slowly,
+            fidgety,
+            wish_was_dead,
+            fidgety,
+            wish_was_dead,
+            hurt,
+            tired,
+            like_mysefl,
+            lost_weight,
+            trouble_sleep,
+            focus
+          ];
+
+          rest_questions.sort();
+          rest_questions.reverse();
+
+          if((score_sadness === 9 || score_interest === 6) && (rest_questions[0]+rest_questions[1]+rest_questions[2]+rest_questions[3] === 12)) {
+            jQuery('.category-1').show();
+          } else if ((score_sadness === 9 || score_interest === 6) && (rest_questions[0]+rest_questions[1]+rest_questions[2] === 9)) {
+            jQuery('.category-2').show();
+          } else if ((score_sadness === 9 || score_interest === 6) && (rest_questions[0]+rest_questions[1] === 6)) {
+            jQuery('.category-3').show();
+          } else if (score_total >= 16) {
+            jQuery('.category-4').show();
+          } else {
+            jQuery('.category-5').show();
+          }
+
+
+
         }
 
       });

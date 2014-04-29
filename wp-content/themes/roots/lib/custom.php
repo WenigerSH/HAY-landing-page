@@ -90,6 +90,13 @@ if(function_exists('pll_register_string')) {
 
     pll_register_string('suicide', 'Your answers show that you have been thinking about hurting yourself recently. Regardless of your responses on the rest of the items, you should schedule an appointment and discuss these feelings with a health professional as soon as you can.');
 
+    pll_register_string('category_1', 'Meets criteria for DSM-IV Major Depressive Disorder. Your answers suggest that depression is an important problem for you. We recommend that you make an appointment with a health care professional to discuss how you are feeling as soon as you can. Depression affects many people. There are good treatments for it.');
+    pll_register_string('category_2', 'Probably Meets criteria for DSM -IV Major Depressive Disorder. Further assessment is needed to determine if Major Depressive Disorder is present. Your answers suggest that depression might be a problem for you. We recommend that you talk about it with your health care professional soon. Depression affects many people. There are good treatments for it.');
+    pll_register_string('category_3', 'Probably Meets criteria for DSM -IV Minor Depressive Disorder. Your answers suggest that depression might be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.');
+    pll_register_string('category_4', 'Does not meet criteria for DSM - IV Depressive Disorder. Answers suggest depression syndrome may be present. Further assessment is needed. Your answers suggest that depression may be a problem for you. The next time you visit a health care professional, we recommend that you talk with him or her about how you have been feeling.');
+    pll_register_string('category_5', 'Does not meet criteria for DSM - IV Depressive Disorder. Your answers suggest that depression is not a problem for you right now. Talk to your health care professional if you ever have symptoms like those listed above for more than a few days.');
+    pll_register_string('question', 'Question');
+
     pll_register_string('agree_the_most', '(Choose the option you most agree with)');
 
 }
