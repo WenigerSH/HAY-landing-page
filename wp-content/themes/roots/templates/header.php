@@ -186,6 +186,9 @@
         <p><span class="score">0</span>/60</p>
         <div class="score-bar-stroke"></div>
       </div>
+      <div class="suicide-ideation" style="display: none">
+        <p><?php pll_e('Your answers show that you have been thinking about hurting yourself recently. Regardless of your responses on the rest of the items, you should schedule an appointment and discuss these feelings with a health professional as soon as you can.'); ?></p>
+      </div>
     </div>
     <div class="slide-footer">
       <a href="#" class="btn btn-in-test"><?php pll_e('Score Explanation'); ?></a>

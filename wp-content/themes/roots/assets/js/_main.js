@@ -64,6 +64,7 @@ var HowAreYou = {
       function clearTest() {
         jQuery(".test-wrapper .slide").hide();
         jQuery(".test-wrapper .introduction").show();
+        jQuery(".suicide-ideation").hide();
         jQuery(".test-wrapper input:checked").prop('checked', false);
         jQuery(".test-wrapper .question button").prop('disabled', true);
       }
@@ -142,6 +143,10 @@ var HowAreYou = {
           jQuery(".score-bar-stroke").animate({
             'width': score_percent+'%'
           }, 800);
+
+          if(score_suicide >= 1) {
+            jQuery('.suicide-ideation').show();
+          }
         }
 
       });

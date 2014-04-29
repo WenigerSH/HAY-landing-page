@@ -88,6 +88,8 @@ if(function_exists('pll_register_string')) {
     pll_register_string('reference', 'Reference: Eaton, W. W., Smith, C., Ybarra, M., Muntaner, C., Tien, A. (2004). Center for Epidemiologic Studies Depression Scale: review and revision (CESD and CESD-R). In ME Maruish (Ed.). The Use of Psychological Testing for Treatment Planning and Outcomes Assessment (3rd Ed.), Volume 3: Instruments for Adults, pp. 363-377. Mahwah, NJ: Lawrence Erlbaum.');
     pll_register_string('more_info', 'More info:');
 
+    pll_register_string('suicide', 'Your answers show that you have been thinking about hurting yourself recently. Regardless of your responses on the rest of the items, you should schedule an appointment and discuss these feelings with a health professional as soon as you can.');
+
     pll_register_string('agree_the_most', '(Choose the option you most agree with)');
 
 }
