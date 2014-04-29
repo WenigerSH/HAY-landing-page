@@ -63,8 +63,8 @@ var HowAreYou = {
 
       function clearTest() {
         jQuery(".test-wrapper .slide").hide();
-        jQuery(".test-wrapper .introduction").show();
-        jQuery(".suicide-ideation, .test-category").hide();
+        jQuery(".test-wrapper .introduction, .question-number").show();
+        jQuery(".suicide-ideation, .test-category, .next-label").hide();
         jQuery(".test-wrapper input:checked").prop('checked', false);
         jQuery(".test-wrapper .question button").prop('disabled', true);
       }
