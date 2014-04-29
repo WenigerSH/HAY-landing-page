@@ -100,6 +100,8 @@ if(function_exists('pll_register_string')) {
     pll_register_string('hay_placement_1', 'By the moment you meet with a healthcare professional, you can start monitoring your mood using the How Are You App. This will give you more information about your emotional states, what can be helpful during the first meeting with the healthcare professional.');
     pll_register_string('hay_placement_2', 'You can start monitoring your mood right now using the How Are You App. Thus, you will gain more information about your emotional states and you will be able to identify what factors influenced your mood. Together with How Are You App you will discover also how to prevent mood disorders and how you can take care of mental health.');
 
+    pll_register_string('finish', 'Finish');
+
     pll_register_string('agree_the_most', '(Choose the option you most agree with)');
 
 }
