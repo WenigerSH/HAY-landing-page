@@ -1,4 +1,3 @@
-<div id="home"></div>
 <header role="banner">
   <div class="container">
     <div class="row">
@@ -15,6 +14,11 @@
           </nav>
       </div>
     </div>
+  <?php
+    if (has_nav_menu('language_navigation')) :
+      wp_nav_menu(array('theme_location' => 'language_navigation'));
+    endif;
+  ?>
   </div>
 </header>
 

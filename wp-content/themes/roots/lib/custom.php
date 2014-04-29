@@ -15,6 +15,7 @@ function add_widget_title_to_before_widget( $instance, $widget_class, $args ) {
 
 register_nav_menus(array(
   'secondary_navigation' => __('Secondary Navigation', 'roots'),
+  'language_navigation' => __('Language Navigation', 'roots')
 ));
 
 add_filter('upload_mimes', 'custom_upload_mimes');

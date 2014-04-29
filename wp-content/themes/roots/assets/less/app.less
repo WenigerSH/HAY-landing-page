@@ -343,6 +343,40 @@ header {
    background: @headerBackgroundColor;
    background: @headerBackgroundColorOpacity;
 
+   .container {
+     position: relative;
+   }
+
+   #menu-language-navigation {
+     position: absolute;
+     list-style-type: none;
+     display: inline-block;
+     padding: 9px 12px;
+     margin: 0;
+     z-index: 9999;
+     top: -4px;
+     right: 175px;
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            color: lighten(@blueColor, 50%);
+          }
+        }
+      }
+   }
+
    .main-nav ul {
       position: relative;
       top: 6px;
