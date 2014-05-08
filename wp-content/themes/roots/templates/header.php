@@ -161,7 +161,7 @@
       <?php endforeach; ?>
     </div>
     <div class="slide-footer">
-      <button class="btn btn-in-test" disabled><span class="question-number"><?php pll_e('Question'); ?> <?=$i;?>/20</span><span class="next-label" style="display: none"><?php pll_e('Next'); ?></span></button>
+      <button class="btn btn-in-test" disabled><span class="question-number"><?php pll_e('Question'); ?> <?=$i;?>/20</span><span class="next-label" style="display: none" <?php if ($i == 20){ ?> onClick="_gaq.push(['_trackEvent', 'Test', 'End', 'End of the test']);"<?php }?>><?php pll_e('Next'); ?></span></button>
     </div>
   </div>
   <?php $i++; ?>
