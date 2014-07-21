@@ -74,3 +74,14 @@
 </footer>
 
 <?php wp_footer(); ?>
+<!-- Begin Survey.io code for gethowareyou.com -->
+<script src="http://cdn.survey.io/embed/1.0/survey.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+Surveyio.init({
+survey_id: "639cc",
+token: "2e13780c3225c92019fe1536d07a649abe64680a",
+banner:
+{ x: "right", y: "top", color: "orange" }
+});
+</script>
+<!-- /End Survey.io code -->
