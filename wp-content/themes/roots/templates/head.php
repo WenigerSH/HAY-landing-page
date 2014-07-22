@@ -15,8 +15,6 @@
 	_kms('//i.kissmetrics.com/i.js');
 	_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 	</script>
-	<script type="text/javascript"> var getsmily_id="5i1i1ib942wwuie";</script>
-	<script src="https://www.getsmily.com/Emobar/emolytics-start-widget/emolytics-widget.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php wp_title('|', true, 'right'); ?></title>
